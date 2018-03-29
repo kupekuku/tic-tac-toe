@@ -1,14 +1,18 @@
 <html>
 	<head>
 		<title> Tic Tac Toe</title>
-		<script type="text/javascript">
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<script >
 			
 			var canvas, ctx;
 
 			window.onload = function main() {
 
-				canvas =
-				ctx
+				canvas = document.createElement("canvas");
+				canvas.width = canvas.height = 200;
+				ctx = canvas.getContext("2d");
+
+				document.body.appendChild(canvas);
 
 				init();
 				tick();
@@ -31,6 +35,30 @@
 			}
 
 			function render () {
+
+			}
+
+			function Tile(x, y) {
+
+				var x = x,  y = y;
+
+				var tile = Tile.BLANK;
+
+				if (tile == null) {
+					 ver _c = document.createElement(" canvas");
+					 _c.width = _c.height = 100;
+					 _ctx = _c.getContext("2d");
+				}
+
+				this.update = function() {
+
+				}
+
+				this.draw = function(ctx) {
+					ctx.drawImage(tile, x, y)
+
+				}
+
 
 			}
 		</script>
